@@ -18,9 +18,15 @@
     <ClInclude Include="Catch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="quotrest.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="tests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="quotrest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

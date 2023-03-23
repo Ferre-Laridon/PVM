@@ -1,6 +1,7 @@
 #define CATCH_CONFIG_MAIN
 #include "util.h"
 #include "Catch.h"
+#include "minmax.h"
 
 
 TEST_CASE("Max of 1, 2, 3")
