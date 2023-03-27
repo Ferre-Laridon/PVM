@@ -99,5 +99,27 @@ void make_cyclic(linked_list* lst)
 */
 bool has_cycle(linked_list* lst)
 {
-    
+    if (lst == nullptr)
+    {
+        return false;
+    }
+    else
+    {
+        linked_list* turtoise = lst;
+        linked_list* hare = (*lst).next;
+
+        while (turtoise != hare)
+        {
+            if (hare == nullptr || hare->next == nullptr)
+            {
+                return false;
+            }
+            else
+            {
+                turtoise = (*turtoise).next;
+                hare = (*(*hare).next).next;
+            }
+        }
+
+        return true;
 }
